@@ -1,0 +1,150 @@
+/* Some CSS Setup - nothing to do with flexbox */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  }
+
+  /* styles for the header part */
+
+  .header{
+      padding: 10px;
+      background: #2376ae;
+      color: white;
+  }
+
+  .container{
+      margin: 0 auto;
+      max-width: 80em;
+  }
+
+  .header .container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .logo{
+      height: 100px;
+      width: 100px;
+  }
+
+  .header-text{
+      font-weight: 500;
+      font-size: 2em;
+  }
+
+  .fa-heart{
+      /* color of the heart is to be decided */
+      color : #DA70D6;
+  }
+
+  /*  for screen size with max-width of 700px */
+  @media (max-width: 700px){
+      .header-text{
+          width: 100%;
+          text-align: center;
+      }
+      .logo{
+        margin: 0 auto;
+        text-align: center !important;
+      }
+  }
+
+  
+  /* styling for the navigation bar */
+
+  .main-nav{
+      background: #ffc600;
+  }
+
+  .main-nav a{
+      text-decoration: none;
+  }
+
+  .main-nav ul, .main-nav li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* using flexbox */
+  .main-nav ul{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .main-nav ul a{
+      display: flex;
+      padding: 15px 35px;
+      text-transform: uppercase; 
+      color: black;
+      font-weight: 400;
+  }
+
+  .main-nav ul a:hover, .main-nav ul a:focus{
+      /* color to be decided */
+
+  }
+
+  .main-nav ul .mobile a{
+      position: absolute;
+      left: -99999em;
+  }
+
+ 
+  /* for screen size with a max-width of 700px */
+
+  @media (max-width:700px){
+      .main-nav ul{
+          flex-wrap: wrap;
+          /* justify-content: flex-start; */
+      }
+
+      .main-nav ul a{
+          position: absolute;
+          left: -99999em;
+      }
+
+      .main-nav ul.mopen li{
+          width: 100%;
+      }
+
+      .main-nav ul.mopen li.mobile a {
+        background: #fbf78d;
+        color: black;
+        font-weight: bold;
+      }
+
+      .main-nav ul.mopen a{
+          position: static;
+      }
+
+      .main-nav ul .mobile a{
+          position: static;
+      }
+
+      .main-nav a {
+          width: 100%;
+      }
+  }
+
+  
