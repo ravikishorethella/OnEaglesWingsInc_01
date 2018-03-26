@@ -100,10 +100,10 @@ html {
       font-weight: 400;
   }
 
-  .main-nav ul a:hover, .main-nav ul a:focus{
-      /* color to be decided */
+  /* .main-nav ul a:hover, .main-nav ul a:focus{
+      color to be decided
 
-  }
+  } */
 
   .main-nav ul .mobile a{
       position: absolute;
@@ -208,15 +208,15 @@ footer ul li{
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    
+    font-size: 16px;
   }
   
-  p{
+  /* .wrapper p{
     margin: 0;
     padding: 0;
-  }
+  } */
   
-  .fa{
+  .org-icons{
     padding-bottom: 1em;
   }
   
@@ -247,7 +247,7 @@ footer ul li{
   
   .third{
     padding: 15px;
-    background: #484848;
+    background: rgb(197, 111, 14);
     color: white;
     flex-basis: 33.33%;
     display: flex;
@@ -257,7 +257,7 @@ footer ul li{
   }
   
   /* media queries */
-  @media (max-width: 885px){
+  @media (max-width: 935px){
     .wrapper{
       display: flex;
       flex-direction: column;
