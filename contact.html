@@ -58,6 +58,8 @@
     </nav>
 
 
+    <!-- map code  -->
+    <div id="map"> </div>
 
 
     <!-- page-footer -->
@@ -90,7 +92,22 @@
         </ul>
     </footer>
 
-
+    <!-- map code script-->
+    <script>
+        function initMap() {
+            var uluru = { lat: 41.6619927, lng: -86.1586156 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANUPPHB2iXL35senuddDtnssFLl30OtfM&callback=initMap">
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
