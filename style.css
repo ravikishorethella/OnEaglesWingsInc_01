@@ -155,7 +155,7 @@ html {
     justify-content: space-around;
     background-color: #484848;
     color: #fefefe;
-    padding: 20px 0 0 0;
+    padding: 20px 0;
     letter-spacing: 0.5px;
 }
 
@@ -221,6 +221,12 @@ footer ul li{
     }
     footer ul li{
         margin: 0 8px;
+    }
+}
+
+@media (max-width: 1099px){
+    footer{
+        padding: 20px 0 0 0;
     }
 }
 
