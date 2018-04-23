@@ -1,4 +1,7 @@
 /* Some CSS Setup - nothing to do with flexbox */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 html {
   box-sizing: border-box;
 }
@@ -526,3 +529,192 @@ ul.image-grid li:hover {
     margin-bottom: 0;
   }
 }
+
+/* index page styling */
+.quote {
+  margin-top: 50px;
+  /* margin-bottom: 30px; */
+  text-align: center;
+  color: white;
+  font-size: 34px;
+}
+
+/* media queries for quote */
+@media (max-width: 730px) {
+  .quote {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .quote {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 18px;
+  }
+}
+
+/* index content  */
+
+.index-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content p {
+  margin: 5px;
+  padding: 0;
+}
+
+.main-content {
+  padding: 15px;
+  /* color: #e9e6e6; */
+  color: #dcd8d7;
+  /* color: #e1dedd; */
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  line-height: 24px;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+
+/* .children-image {
+  padding: 15px;
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+} */
+
+/* media queries */
+/* @media (max-width: 885px) {
+  .index-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content,
+  .children-image {
+    flex-basis: 100%;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+  } */
+/* .children-image p img {
+    display: none;
+  } */
+/* } */
+
+/* .children-image p img {
+  width: 100%;
+  min-height: 100vh;
+} */
+
+@media (max-width: 800px) {
+  .main-content {
+    font-size: 16px;
+  }
+}
+
+/* board of directors */
+.directors {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+  font-size: 34px;
+}
+
+/* grid styles */
+
+.card-content p {
+  color: #666;
+}
+
+.card-content h2 {
+  font-size: 32px;
+  color: #e74c3c;
+}
+.centered {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 52em) {
+  .centered {
+    max-width: 52em;
+  }
+}
+
+.site-title {
+  color: white;
+}
+
+.card {
+  background: white;
+  margin-bottom: 2em;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+
+.card a:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.card-content {
+  padding: 1.4em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
+.card-content p {
+  font-size: 95%;
+}
+
+.card a img {
+  width: 100%;
+  height: auto;
+}
+
+/* Flexbox styles */
+@media screen and (min-width: 32em) {
+  .cards {
+    margin-top: -1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-bottom: 1em;
+    display: flex;
+    flex: 0 1 calc(50% - 0.5em);
+    /* width: calc(50% - 1em); */
+  }
+} /* mq 40em*/
+
+@media screen and (min-width: 45em) {
+  .cards {
+    margin-top: inherit;
+  }
+
+  .card {
+    margin-bottom: 2em;
+    display: flex;
+    flex: 0 1 calc(33% - 0.5em);
+    /* width: calc(33% - 1em); */
+  }
+} /* mq 60em*/
