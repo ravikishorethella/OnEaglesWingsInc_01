@@ -750,6 +750,6 @@ ul.image-grid li:hover {
 /* styles for the names */
 .names {
   text-decoration: none;
-  color: goldenrod;
+  color: goldenrod !important;
   font-weight: bold;
 }
