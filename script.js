@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // mobile hamburger
   $(".mobile a").click(function(e) {
     $(this)
       .parent()
