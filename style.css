@@ -423,7 +423,7 @@ ul.image-grid li {
   height: 240px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  /* background-position: center center; */
 }
 
 ul.image-grid li:hover {
@@ -468,6 +468,30 @@ ul.image-grid li:hover {
 
 .image-10 {
   background-image: url("././images/g10.jpg");
+}
+
+.image-11 {
+  background-image: url("././images/g11.jpg");
+}
+
+.image-12 {
+  background-image: url("././images/g12.jpg");
+}
+
+.image-13 {
+  background-image: url("././images/g13.jpg");
+}
+
+.image-14 {
+  background-image: url("././images/g14.jpg");
+}
+
+.image-15 {
+  background-image: url("././images/g15.jpg");
+}
+
+.image-16 {
+  background-image: url("././images/g16.jpg");
 }
 
 /* media queries */
