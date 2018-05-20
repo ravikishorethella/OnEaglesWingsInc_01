@@ -666,7 +666,7 @@ ul.image-grid li:hover {
 }
 
 .card-content h2 {
-  font-size: 32px;
+  font-size: 28px;
   color: #e74c3c;
 }
 .centered {
@@ -714,7 +714,7 @@ ul.image-grid li:hover {
 
 .card a img {
   width: 100%;
-  height: auto;
+  height: 250px;
 }
 
 /* Flexbox styles */
