@@ -777,3 +777,7 @@ ul.image-grid li:hover {
   color: goldenrod !important;
   font-weight: bold;
 }
+
+iframe {
+  margin: 0 auto !important;
+}
