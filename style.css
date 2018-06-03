@@ -669,7 +669,11 @@ ul.image-grid li:hover {
 }
 
 .card {
+  /* background: white;
+  margin-bottom: 2em; */
   background: white;
+  width: 70%;
+  margin: 0 auto;
   margin-bottom: 2em;
 }
 
