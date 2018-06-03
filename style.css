@@ -769,3 +769,9 @@ ul.image-grid li:hover {
 iframe {
   margin: 0 auto !important;
 }
+
+#testing-donorbox {
+  margin: 0 auto;
+  /* width: 80%; */
+  max-width: 900px;
+}
