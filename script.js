@@ -50,4 +50,28 @@ $(document).ready(function() {
         }
       });
   }
+
 });
+
+// code for the stories
+
+function myFunction(a,b,c){
+  readToggle(a,b,c);
+}
+
+function readToggle(dot, more, btnId){
+  var dots = document.getElementById(dot);
+  var moreText = document.getElementById(more);
+  var btnText = document.getElementById(btnId);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
